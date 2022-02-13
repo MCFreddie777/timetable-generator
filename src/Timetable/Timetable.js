@@ -1,7 +1,7 @@
 import './Timetable.css';
 import * as settings from '../settings';
 import input from '../input.json';
-import { colorForIndex } from '../helpers/colors/colors';
+import { getColor } from '../helpers/colors/colors';
 
 const getColorByItemName = Object.fromEntries(
     [
@@ -11,7 +11,7 @@ const getColorByItemName = Object.fromEntries(
                 .filter(item => item.color === undefined)
                 .map(item => [item['name'], item]),
         ).keys(),
-    ].map((name, index) => [name, colorForIndex(index)]),
+    ].map((name, index) => [name, getColor()]),
 );
 
 function getItemsByDay(day) {
@@ -66,7 +66,7 @@ function Timetable() {
                                                     }}
                                                 >
                                                     <img
-                                                        src={`/images/${currentHourItem.image}`}
+                                                        src={`./images/${currentHourItem.image}`}
                                                         style={{ height: '1.5em' }}
                                                     />
                                                 </td>

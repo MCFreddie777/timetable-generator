@@ -1,3 +1,22 @@
+const colorPool = [
+    'rgb(93,150,240)',
+    'rgb(111,179,82)',
+    'rgb(124,82,233)',
+    'rgb(201,61,87)',
+    'rgb(228,129,39)',
+    'rgb(242,170,80)',
+    'rgb(136,19,144)',
+    'rgb(124,82,233)',
+    'rgb(206,127,247)',
+    'rgb(201,61,87)',
+];
+
+export function getColor(index = undefined) {
+    const randomIndex = (Math.random() * colorPool.length) | 0;
+    const selectedColor = colorPool.splice(index ?? randomIndex, 1)[0];
+    return selectedColor ?? colorForIndex((Math.random() * 100) | 0);
+}
+
 export function colorForIndex(i, asString = true) {
     const values = HSVToRGB((i * 0.618033988749895) % 1.0, 0.5, Math.sqrt(1.0 - ((i * 0.618033988749895) % 0.5)));
 
