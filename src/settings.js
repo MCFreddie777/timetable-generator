@@ -1,0 +1,20 @@
+const title = 'Pravidelný rozvrh';
+
+const days = ['Pondelok', 'Utorok', 'Streda', 'Štvrtok', 'Piatok'];
+
+const hours = [
+    { from: '8:00', to: '8:50' },
+    { from: '9:00', to: '9:50' },
+    { from: '10:00', to: '10:50' },
+    { from: '11:00', to: '11:50' },
+    { from: '12:00', to: '12:50' },
+    { from: '13:00', to: '13:50' },
+    { from: '14:00', to: '14:50' },
+    { from: '15:00', to: '15:50' },
+    { from: '16:00', to: '16:50' },
+    { from: '17:00', to: '17:50' },
+    { from: '18:00', to: '18:50' },
+    { from: '19:00', to: '19:50' },
+];
+
+export { days, hours, title };

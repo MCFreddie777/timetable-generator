@@ -1,0 +1,45 @@
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: sans-serif;
+}
+
+/* head */
+
+thead > .title > th {
+    padding: 0.25em 0;
+    color: white;
+    font-weight: 500;
+    font-size: 0.5em;
+    background: linear-gradient(180deg, #999 0%, #7c7c7c 100%);
+}
+
+thead > .hours > th {
+    border: 1px solid #ddd;
+    background-color: #a3a3a3;
+    font-size: 0.5em;
+}
+
+thead > .hours > th:not(th.placeholder) {
+    padding: .8em 3.5em;
+    color: white;
+}
+
+/* body */
+tbody > tr > td {
+    border: 1px solid #ddd;
+}
+
+tbody > tr > td:first-child {
+    background-color: #a3a3a3;
+    font-size: 0.5em;
+    color: white;
+    padding: 3em 1em;
+}
+
+tbody > tr > td.item {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 1em 1em;
+}
