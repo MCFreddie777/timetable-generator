@@ -1,6 +1,6 @@
-const title = 'Pravidelný rozvrh';
+const title = 'My Timetable';
 
-const days = ['Pondelok', 'Utorok', 'Streda', 'Štvrtok', 'Piatok'];
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
 const hours = [
     { from: '8:00', to: '8:50' },
